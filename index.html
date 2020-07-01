@@ -7,11 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
     <!--  CSS Links  -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Bootstrap</title>
+    <title>Components | Bootstrap v4.5</title>
 </head>
 
 <body>
@@ -125,15 +129,42 @@
             </div>
         </div>
     </div>
-    <div class="footer">
-        <h3 class="text-center text-white">Footer</h3>
+    <div class="box bg-dark py-2 my-3">
+        <h3 class="text-center text-warning">Buttons Group</h3>
         <div class="container">
             <div class="row">
-                <div class="col-md d-none d-sm-block">
-                    <div class="box">6.1</div>
+                <div class="col">
+                    <div class="btn-toolbar justify-content-between" role="toolbar"
+                        aria-label="Toolbar with button groups">
+                        <div class="btn-group" role="group" aria-label="First group">
+                            <button type="button" class="btn btn-secondary active">1</button>
+                            <button type="button" class="btn btn-secondary">2</button>
+                            <button type="button" class="btn btn-secondary">3</button>
+                            <button type="button" class="btn btn-secondary">4</button>
+                        </div>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text" id="btnGroupAddon">@</div>
+                            </div>
+                            <input type="email" class="form-control" placeholder="Enter your email address"
+                                aria-label="Input group example" aria-describedby="btnGroupAddon">
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md d-sm-none d-block">
-                    <div class="box bg-white">6</div>
+                <div class="col">
+                    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                        <button type="button" class="btn btn-secondary active">Home</button>
+                        <button type="button" class="btn btn-secondary">About</button>
+
+                        <div class="btn-group" role="group">
+                            <button id="btnGroupDrop" type="button" class="btn btn-secondary dropdown-toggle"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</button>
+                            <div class="dropdown-menu" aria-labelledby="btnGroupDrop">
+                                <a class="dropdown-item" href="#">Web Development</a>
+                                <a class="dropdown-item" href="#">Digital Marketing</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -145,9 +176,9 @@
     <!-- JS Links  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script> -->
+    </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
 </html>
