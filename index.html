@@ -19,7 +19,7 @@
     <title>Components | Bootstrap v4.5</title>
 </head>
 
-<body>
+<div>
     <h1 class="text-center bg-dark text-white py-2">Let's <span class="text-warning">Practice</span> <span
             class="text-primary">Bootstrap</span> <span class="text-danger">Components</span></h1>
 
@@ -483,8 +483,196 @@
                     </form>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-6">
+                    <form class="needs-validation border border-light text-light my-3" novalidate>
+                        <div class="form-row">
+                            <div class="col-md-6">
+                                <label for="full_name">Full name</label>
+                                <input type="text" class="form-control" id="full_name" value="Mark" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                                <div class="invalid-feedback">
+                                    fill it
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-6">
+                                <label for="email">Email Address</label>
+                                <input type="email" class="form-control" id="email" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid email.
+                                </div>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                <label class="form-check-label" for="invalidCheck">
+                                    Agree to terms and conditions
+                                </label>
+                                <div class="invalid-feedback">
+                                    agree before submitting.
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" type="submit">Submit</button>
+                    </form>
+                </div>
+                <div class="col-6">
+                    <form class="needs-validation border border-light text-light my-3" novalidate>
+                        <div class="form-row">
+                            <div class="col-md-6 ">
+                                <label for="full_name">Full name</label>
+                                <input type="text" class="form-control " id="full_name" required>
+                                <div class="valid-tooltip">
+                                    Looks good!
+                                </div>
+                                <div class="invalid-tooltip">
+                                    fill it
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-6 ">
+                                <label for="email">Email Address</label>
+                                <input type="email" class="form-control " id="email" required>
+                                <div class="invalid-tooltip">
+                                    Please provide a valid email.
+                                </div>
+                                <div class="valid-tooltip">
+                                    Looks good!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                <label class="form-check-label" for="invalidCheck">
+                                    Agree to terms and conditions
+                                </label>
+                                <div class="invalid-tooltip">
+                                    agree before submitting.
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
+    <div class="box bg-dark py-2 my-3">
+        <h3 class="text-center text-warning">Media Object</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="media border border-warning">
+                        <div class="mr-3 bg-warning" style="width: 64px; height: 64px;">Image</div>
+                        <div class="media-body text-light">
+                            <h5 class="mt-0">Media heading</h5>
+                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
+                            Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc
+                            ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="box bg-dark py-2 my-3">
+        <h3 class="text-center text-warning">Modal</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticModal">
+                        Click here to see a simple modal!
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticModal" data-backdrop="static" data-keyboard="false"
+                        tabindex="-1" role="dialog" aria-labelledby="staticModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="staticModalLabel">Modal title</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <h3>Welcome to my Project</h3>
+                                    <p>I am Moin, Full stack Web developer and Wordpress Expert</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Understood</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="box bg-dark py-2 my-3">
+        <h3 class="text-center text-warning">Navs</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <nav class="navbar navbar-expand-lg navbar-dark">
+                        <a class="navbar-brand" href="#">Navbar</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+                            aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarColor01">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Features</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Pricing</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About</a>
+                                </li>
+                            </ul>
+                            <form class="form-inline">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search"
+                                    aria-label="Search">
+                                <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="box bg-dark py-2 my-3">
+        <h3 class="text-center text-warning">Popover</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-auto">
+                    <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 
 
     <div class="text-center text-white bg-dark py-1"><small>Practiced By <a href="https://www.facebook.com/moinulmoin0/"
@@ -498,5 +686,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
-
+    <script src="js/script.js"></script>
+    <script src="js/popover.js"></script>
 </html>
